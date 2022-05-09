@@ -8,11 +8,16 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <img alt="Vue logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="finbuddy !!" />
+      <HelloWorld msg="FinBuddy !!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink v-if="!isLoggedIn" to="/login">Login</RouterLink>
+        <RouterLink v-if="isLoggedIn" to="/logout">Logout</RouterLink>
+        <RouterLink v-if="isLoggedIn" to="/txns">Txns</RouterLink>
+        <RouterLink v-if="isLoggedIn" to="/add">Add </RouterLink>
+
+
       </nav>
     </div>
   </header>

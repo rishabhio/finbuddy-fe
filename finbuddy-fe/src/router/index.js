@@ -20,6 +20,11 @@ const router = createRouter({
       path: '/txns',
       name: 'transactions',
       component: () => import('../views/TxnView.vue')
+    },
+    {
+      path: '/add',
+      name: 'addTxn',
+      component: () => import('../views/AddTxnView.vue')
     }
   ]
 })
